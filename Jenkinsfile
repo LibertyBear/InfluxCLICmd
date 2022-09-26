@@ -35,8 +35,8 @@ pipeline {
             //Define steps
             steps {
                 echo "Building the application"
-               // sh "wget https://dl.influxdata.com/influxdb/releases/influxdb-1.8.10_linux_amd64.tar.gz"
-               // sh "tar xvfz influxdb-1.8.10_linux_amd64.tar.gz"
+                sh "wget https://dl.influxdata.com/influxdb/releases/influxdb-1.8.10_linux_amd64.tar.gz"
+                sh "tar xvfz influxdb-1.8.10_linux_amd64.tar.gz"
 
                sh "cd /influxdb-1.8.10-1/usr/bin/"
                sh "ls"
