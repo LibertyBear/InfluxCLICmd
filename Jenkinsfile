@@ -35,8 +35,8 @@ pipeline {
             //Define steps
             steps {
                 echo "Building the application"
-                sh "docker pull influxdb"
-                sh "docker images"
+                sh "wget https://dl.influxdata.com/influxdb/releases/influxdb-1.8.10_linux_amd64.tar.gz"
+                sh "tar xvfz influxdb-1.8.10_linux_amd64.tar.gz"
             }
         }
 
