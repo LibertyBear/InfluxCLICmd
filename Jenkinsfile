@@ -39,7 +39,7 @@ pipeline {
                 sh "tar xvfz influxdb-1.8.10_linux_amd64.tar.gz"
 
                sh "ls"
-               sh "influxd"
+               sh "/influxdb-1.8.10-1/usr/bin/influxd"
             }
         }
 
