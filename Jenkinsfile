@@ -35,6 +35,7 @@ pipeline {
             //Define steps
             steps {
                 echo "Building the application"
+                sh "docker pull influxdb"
                 sh "docker images"
             }
         }
