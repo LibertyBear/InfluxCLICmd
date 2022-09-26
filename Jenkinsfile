@@ -35,6 +35,7 @@ pipeline {
             //Define steps
             steps {
                 echo "Building the application"
+                sh "ls"
             }
         }
 
