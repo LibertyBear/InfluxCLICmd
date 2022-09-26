@@ -35,7 +35,7 @@ pipeline {
             //Define steps
             steps {
                 echo "Building the application"
-                sh "influx"
+                sh "docker images"
             }
         }
 
